@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Munno's Italian Deli</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+
+</head>
+
+<body class="">
+<div id="contain">
+	<header>
+	     <h1 class="title"><span>Munno's</span> Italian Deli</h1>
+	     <h3>Catering For All Occastions <span>845-735-9405</span><h3>
+<!-- 	     <h3><a href="http://google.com" target="_blank">51 East</a> Central Ave, Pearl River, NY 10965</h3> -->
+	     <h4>Phone: (845) 735-9405 / (845) 735-1547<br>
+	     	 Fax (845) 735-9408</h4>
+	</header>
+	<div class="sectionContain">
+		<section id="leftSection">
+		<img src="assets/images/boarshead.png" class="bhImg"/>
+			<div class="adminAuth">
+				<h2>Admin Panel</h2>
+				<input type="text" value="" id="passInput" />
+				<button type="button" onclick="deli.checkPassword()">Authenticate</button>
+			</div>
+			<div id="adminPanel">
+				<div>
+					<h2>Admin Panel</h2>
+					<button disabled type="button"
+							onclick="deli.editItems()">Edit Menu</button> ::
+					<button disabled type="button"
+							onclick="deli.saveEdits()">Save Edits</button>
+				
+					<hr>
+				
+					<button type="button"
+							onclick="deli.setMenuItems()">Set Menu from data</button>
+					<button type="button"
+							onclick="deli.restoreMenu()">Restore Original Menu</button>
+				
+					<hr>
+				
+					<button disabled type="button"
+							onclick="deli.addMenu()">Add Menu</button>
+					<button disabled type="button"
+							onclick="deli.addItem()">Add item</button>
+					<button disabled type="button"
+							onclick="deli.removeItem()">Remove item</button>
+					<button disabled type="button"
+							onclick="deli.removeMenu()">Delete Menu</button>							
+				</div>
+			</div>
+			<div id="map-canvas"></div>
+			<div>51 East Central Ave, Pearl River, NY 10965</div>
+		</section>
+		<section id="rightSection">
+		    <ul class="tabs">
+			    <li><a tabindex="0">Lunch</a></li>
+		    </ul>
+		<img id="menuImage" src="assets/images/deli.jpg" />
+		<div id="order">
+		<h2>Current Order</h2>
+			<ul>
+			
+			</ul>
+			<strong id="orderPrice"></strong>
+			<button id="orderButton" onclick="deli.printOrder()">Print Order</button>
+		</div>
+		<div class="menuContainer">
+
+		</div>
+		</section>
+		</div>
+	<footer>
+	    munnoscatering.com :: Munno's Italian Deli :: Phone: (845) 735-9405 / (845) 735-1547
+	    <a onclick="$('.adminAuth').slideDown()" href="#">Admin</a>
+	</footer>
+</div>
+<script type="text/javascript" src="assets/scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="assets/scripts/deli.1.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=en"></script>
+
+<script>deli.init()</script>
+</body>
+</html>

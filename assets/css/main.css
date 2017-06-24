@@ -1,0 +1,420 @@
+.hide { display: none}
+.forceHide { display: none}
+a,a:hover,a:visited,a:active {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:#BEA865;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:Chunk;
+}
+body {
+    background: url("../images/bg.png") repeat scroll 0 0 #DDDDDD;
+    font-family: sans-serif;
+}
+#contain {
+    background: url(../images/italy.png) no-repeat #fff 11px 18px;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 886px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.41);
+    overflow:hidden;
+}
+.menuEdit {
+    outline:2px dashed red;
+    outline-offset:2px;
+}
+header {
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+header h1 {
+    background-color: #FF0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: sansmanbold;
+    font-weight: normal;
+    letter-spacing: 8px;
+    margin: 8px 0 0 87px;
+    padding: 8px 4px 24px 143px;
+    position: relative;
+    text-transform: uppercase;
+}
+header h1>span {
+    display: inline-block;
+    font-family: Comic Sans MS;
+    font-style: italic;
+    font-weight: bold;
+    left: 6px;
+    letter-spacing: 0;
+    position: absolute;
+    text-transform: none;
+    top: 4px;
+    transform: rotate(-7deg);
+    -ms-transform:rotate(-7deg); /* IE 9 */
+    -webkit-transform:rotate(-7deg); /* Safari and Chrome */
+
+}
+header h2 {
+    position:absolute;
+    top:60px;
+    left:100px;
+}
+header h3 {
+    border-top: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    font-family: jcursive;
+    font-size: 21px;
+    left: 230px;
+    margin-top: 0;
+    overflow: visible;
+    position: absolute;
+    top: 48px;
+    white-space: pre;
+    width: 326px;
+}
+header h3>span {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding-left: 2px;
+}
+header h4 {
+    font-family: Tahoma;
+    font-size: 10px;
+    left: 659px;
+    margin-top: 5px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+}
+footer {
+    background: #AAAAAA;
+    background: -moz-linear-gradient(top, #aaaaaa 0%, #777777 100%);
+    background: -webkit-linear-gradient(top, #aaaaaa 0%,#777777 100%);
+    background: -o-linear-gradient(top, #aaaaaa 0%,#777777 100%);
+    background: -ms-linear-gradient(top, #aaaaaa 0%,#777777 100%);
+    background: linear-gradient(to bottom, #aaaaaa 0%,#777777 100%);
+    font-family: Arial;
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+}
+footer a {
+    float: right;
+    margin-left: -14px;
+    margin-right: 14px;
+}
+.adminAuth {display:none;}
+.price:before {
+    content:" $";
+}
+#map-canvas {
+    border: 4px solid #808080;
+    border-radius: 11px 11px 11px 11px;
+    height: 170px;
+    margin: 10px auto;
+    width: 90%;
+}
+#adminPanel {
+    display:none;
+    overflow:hidden;
+}
+#adminPanel>div {
+    background-color: #7A7A7A;
+    border-radius: 30px 0 0 30px;
+    margin: 0 auto;
+    padding: 5px 0 10px;
+}
+#adminPanel>div>h2 {
+    color: #222222;
+    font-size: 18px;
+    margin: 9px;
+}
+#adminPanel>div>hr {
+    width:90%;
+}
+.sectionContain {
+    width:100%;
+    font-size:0;
+    min-height:300px;
+}
+.sectionContain #order input {
+    width:45px;
+    display:inline-block;
+}
+.sectionContain #order input:before {
+    content:"Qty:";
+}
+.sectionContain #order {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    float: right;
+    width: 29%;
+    display:block;
+    clear: right;
+    margin-bottom:10px;
+    margin-top: 122px;
+}
+.sectionContain #order h2{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+.sectionContain #order ul li:before{
+    content:" - ";
+    margin-left: -8px;
+}
+.sectionContain #order ul{
+    list-style: none outside none;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.sectionContain #order li {
+    margin-top: 5px;
+}
+.sectionContain #order li strong{
+    margin-left: 5px;
+    display: block;
+}
+.sectionContain #order button {
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px auto;
+    padding: 1px 4px;
+    text-align: center;
+ }
+.sectionContain #order #orderPrice {
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+section {
+    vertical-align: text-top;
+    display: inline-block;
+    font-size:12px;
+    height:100%;
+}
+section#leftSection {
+    border-radius: 30px 0 0 0;
+    background-color: #aaa;
+    text-align:center;
+    width: 262px;
+    min-height:310px;
+}
+section#rightSection {
+    border-radius: 0 30px 0 0;
+    min-height: 300px;
+    padding: 10px 20px 0;
+    width: 584px;
+    background-color:#E3E3E3;
+    box-shadow:-3px 3px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+section#rightSection .close{
+    padding:4px;
+    cursor:pointer;
+    font-weight:bold;
+}
+section#leftSection .bhImg {
+    margin-top:14px;
+}
+#menuImage {
+    position: absolute;
+    right: 19px;
+    top: 16px;
+    width: 172px;
+}
+.menuContainer {
+    width: 69%;
+}
+#rightSection .menu ol {
+    
+}
+.menuContainer .qty{
+    display:inline-block;
+    float: right;
+    font-size: 9px;
+    margin-top: -2px;
+    width: 71px;
+}
+.menuButton {
+    display:inline-block;
+    bottom: 7px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    margin-top: 4px;
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+}
+.imgRight {
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: -32px;
+}
+.imgLeft {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.editable{
+     color: #000;
+     background-color: #ffffd3;
+ }
+
+.tabs {
+    font-size: 0;
+    margin: -31px 0 0 -30px;
+    padding: 0;
+    position: relative;
+}
+.tabs li {
+    display:inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.tabs a {
+    background-color: #BEA865;
+    border-radius: 10px 10px 0 0;
+    color: black;
+    display: block;
+    cursor:pointer;
+    margin-left: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.tabs a:hover {
+    background-color: #DEC885;
+}
+.tabs .active {
+    border-bottom: 1px solid white;
+    background-color: white;
+    color: rgb(51,72,115);
+    position: relative;
+}
+.menu:after {
+    /*content:"HI";*/
+}
+.menu {
+    display:none;
+}
+input {
+
+}
+.menu h2 input {
+
+}
+.menu input.desc {
+
+}
+.menu input.price {
+
+}
+.menu strong input {
+
+}
+.tabs a input {
+
+}
+
+
+.menu h2 input:after {
+    content:" Menu Header";
+    font-family: Arial
+}
+.menu input.desc:after {
+    content:" Item description";
+    font-family: Arial
+}
+.menu input.price:after {
+    content:" Price";
+    font-family: Arial
+}
+.menu strong input:after {
+    content:" Item Name";
+    font-family: Arial
+}
+.tabs a input:after {
+    content:"";
+    font-family: Arial
+}
+
+
+#lunch {
+    display:block;
+}
+.menu h2 {
+    color: rgb(57,78,121);
+    text-shadow: none;
+    font-family:Chuck;  
+    display: inline-block;    
+}
+.menu p {
+    color: black;   
+}
+.inlineBlock{
+    display:inline-block !important;
+}
+.block {
+    display:block !important;
+}
+.hide:before {
+    content:"" !important;
+}
+.hide {
+    display:none !important;
+}
+
+
+@font-face {
+    font-family: 'sansmanbold';
+    src: url('../entsans-webfont.eot');
+    src: url('../entsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../entsans-webfont.woff') format('woff'),
+         url('../entsans-webfont.ttf') format('truetype'),
+         url('../entsans-webfont.svg#enter_sansmanbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jcursive';
+    src: url('../just_for_giggles-webfont.eot');
+    src: url('../just_for_giggles-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../just_for_giggles-webfont.woff') format('woff'),
+         url('../just_for_giggles-webfont.ttf') format('truetype'),
+         url('../just_for_giggles-webfont.svg#just_for_gigglesmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Chuck';
+    src: url('../chunkfive-webfont.eot');
+    src: url('../chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../chunkfive-webfont.woff') format('woff'),
+         url('../chunkfive-webfont.ttf') format('truetype'),
+         url('../chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

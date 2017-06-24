@@ -1,0 +1,16 @@
+{
+    "name": "aml51z/alexlefkowitz.com",
+    "description": "Alex's professional site",
+    "type": "project",
+    "license": "CC BY-NC-SA",
+    "authors": [
+        {
+            "name": "Alex Lefkowitz",
+            "email": "aml51z@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	    "php": "^7.0"
+    }
+}
